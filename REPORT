@@ -1,0 +1,231 @@
+Name: Jesus Alvarez Gonzalez
+ID: 1249469
+
+Hopefully this time moodle receives this assignment properly,
+and this can make up for the previous problems.
+
+
+
+Program can be run writing things such as:
+
+./myStringApp 1000 worst
+./myStringApp 128000 first
+./myStringApp 16000 best
+
+
+Where the number is the size of the heap, followed by the alloc mode.
+The file to read from has been hardcoded in myStringApp.c file, and can be modified at line 45.
+
+Discussion (Doing this here so you don't have to get lost through the wall of data):
+
+ Whith small heaps and files, the algorithms seem to perform almost identically.
+ Best and first fit seem to perform very similary for this exercise.
+ Worst fit however does get slightly bigger and more numerous holes as the heapsize and file get bigger, with some data loss.
+
+
+Results(wall of data):
+
+ SMALL_FILE:
+	1K HEAP:
+		First:	
+			Heap used ratio = 99%
+			Number of free holes = 2
+			Average size of holes = 2
+			Number of allocated chunks = 30
+
+		Best:
+			Heap used ratio = 99%
+			Number of free holes = 2
+			Average size of holes = 2
+			Number of allocated chunks = 30
+
+		Worst:
+			Heap used ratio = 99%
+			Number of free holes = 2
+			Average size of holes = 2
+			Number of allocated chunks = 30
+
+
+	16K HEAP:
+		First:
+			Heap used ratio = 99%
+			Number of free holes = 4
+			Average size of holes = 3
+			Number of allocated chunks = 425
+
+
+		Best:
+			Heap used ratio = 99%
+			Number of free holes = 4
+			Average size of holes = 3
+			Number of allocated chunks = 425
+
+		Worst:
+			Heap used ratio = 99%
+			Number of free holes = 4
+			Average size of holes = 3
+			Number of allocated chunks = 425
+
+	128K HEAP:
+		First:
+			Heap used ratio = 12%
+			Number of free holes = 4
+			Average size of holes = 27911
+			Number of allocated chunks = 437
+
+
+		Best:
+			Heap used ratio = 12%
+			Number of free holes = 4
+			Average size of holes = 27911
+			Number of allocated chunks = 437
+
+		Worst:
+			Heap used ratio = 12%
+			Number of free holes = 4
+			Average size of holes = 27911
+			Number of allocated chunks = 437
+
+			
+
+
+ MEDIUM_FILE:
+	1K HEAP:
+		First:
+			Heap used ratio = 99%
+			Number of free holes = 2
+			Average size of holes = 2
+			Number of allocated chunks = 30
+
+		Best:
+
+			Heap used ratio = 99%
+			Number of free holes = 2
+			Average size of holes = 2
+			Number of allocated chunks = 30
+
+		Worst:
+
+			Heap used ratio = 99%
+			Number of free holes = 2
+			Average size of holes = 2
+			Number of allocated chunks = 30
+
+
+
+
+
+	16K HEAP:
+		First:
+			Heap used ratio = 99%
+			Number of free holes = 5
+			Average size of holes = 3
+			Number of allocated chunks = 427
+
+
+		Best:
+			Heap used ratio = 99%
+			Number of free holes = 5
+			Average size of holes = 3
+			Number of allocated chunks = 427
+
+		Worst:
+			Heap used ratio = 99%
+			Number of free holes = 7
+			Average size of holes = 3
+			Number of allocated chunks = 432
+
+
+	128K HEAP:
+		First:
+			Heap used ratio = 85%
+			Number of free holes = 11
+			Average size of holes = 1640
+			Number of allocated chunks = 2794
+
+		Best:
+			Heap used ratio = 85%
+			Number of free holes = 11
+			Average size of holes = 1640
+			Number of allocated chunks = 2794
+
+		Worst:
+			Heap used ratio = 85%
+			Number of free holes = 22
+			Average size of holes = 833
+			Number of allocated chunks = 2785
+
+
+
+
+ LARGE_FILE:
+	1K HEAP:
+		First:	
+			Heap used ratio = 99%
+			Number of free holes = 2
+			Average size of holes = 2
+			Number of allocated chunks = 30
+
+		
+		Best:
+			Heap used ratio = 99%
+			Number of free holes = 2
+			Average size of holes = 2
+			Number of allocated chunks = 30
+
+		Worst:
+			Heap used ratio = 99%
+			Number of free holes = 2
+			Average size of holes = 2
+			Number of allocated chunks = 30
+
+
+
+	16K HEAP
+		First:
+			Heap used ratio = 99%
+			Number of free holes = 5
+			Average size of holes = 3
+			Number of allocated chunks = 427
+
+		Best:
+			Heap used ratio = 99%
+			Number of free holes = 5
+			Average size of holes = 3
+			Number of allocated chunks = 427
+
+		Worst:
+			Heap used ratio = 99%
+			Number of free holes = 7
+			Average size of holes = 3
+			Number of allocated chunks = 432
+
+
+
+	128 HEAP
+		First:
+			Heap used ratio = 99%
+			Number of free holes = 14
+			Average size of holes = 2
+			Number of allocated chunks = 3251
+
+		Best:
+			Heap used ratio = 99%
+			Number of free holes = 14
+			Average size of holes = 2
+			Number of allocated chunks = 3251
+
+
+		Worst:
+			Heap used ratio = 99%
+			Number of free holes = 32
+			Average size of holes = 3
+			Number of allocated chunks = 3271
+
+
+
+
+
+
+
+
